@@ -6,7 +6,7 @@
 /*   By: tswart <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 08:03:35 by tswart            #+#    #+#             */
-/*   Updated: 2019/06/28 08:20:01 by tswart           ###   ########.fr       */
+/*   Updated: 2019/06/28 09:15:07 by tswart           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void	cleanjoin(char *base, char *extra)
 {
 	char *tmp;
 
-	tmp = ft_strjoin(base);
+	tmp = ft_strjoin(base, extra);
 	fd_strdel(&base);
 	base = ft_dupdel(&tmp);
 }
