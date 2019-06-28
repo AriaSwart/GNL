@@ -6,7 +6,7 @@
 /*   By: tswart <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/18 08:03:35 by tswart            #+#    #+#             */
-/*   Updated: 2019/06/27 14:17:12 by tswart           ###   ########.fr       */
+/*   Updated: 2019/06/28 08:20:01 by tswart           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	readline(const int fd, char **fd_arr)
 	int		out;
 
 	out = 0;
-	while (!ft_strchr(fd_arr[fd], '\n') && i = read(fd, buff, BUFF_SIZE))
+	while (out == 0 && (i = read(fd, buff, BUFF_SIZE)))
 	{
 		if (ft_strchr(buff, '\n'))
 		{
